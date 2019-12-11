@@ -1,0 +1,54 @@
+{
+  "name": "tabik-vue",
+  "version": "0.1.0",
+  "description": "Multi Platform Content Managemen System Front End with VueJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "NODE_ENV=production webpack --mode=production --config ./webpack.production.config.js",
+    "dev": "NODE_ENV=development webpack --mode=development --config./webpack.config.js",
+    "serve-webpack": "webpack-dev-server --progress --mode=development",
+    "serve": "http-server -P https://almumtazpontianak.xyz:9000 -p 9000 --cors --ssl --cert $LOCAL_USER_CERTS/almumtazpontianak.xyz.cert.pem  --key $LOCAL_USER_KEYS/almumtazpontianak.xyz.key.pem dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iwahjoedi/tabik-vue.git"
+  },
+  "keywords": [
+    "cms",
+    "frontend"
+  ],
+  "author": "Indra Wahjoedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iwahjoedi/tabik-vue/issues"
+  },
+  "homepage": "https://github.com/iwahjoedi/tabik-vue#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "cache-loader": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "commonjs2": "^1.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "electron": "^6.0.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jsftp": "2.1.3",
+    "modernizr-webpack-plugin": "^1.0.7",
+    "register-service-worker": "^1.6.2",
+    "serve": "^11.2.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "workbox-webpack-plugin": "^4.3.1"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
+  }
+}
